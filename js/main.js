@@ -44,13 +44,13 @@ function auth() {
 
 function login(user = {}) {
     if (val(user, ['email', 'password'], false)== true  ) {
-        let email = users.find(function(l) { return l.email === user.email }) ? true : false;
-        let pas = users.find(function(l){ return l.password === user.password }) ? true : false;
+        let email = users.find(function(l) { return l.email === user.email });
+        let auth = email.password === user.password  ? true : false;
         
-        if (email & pas) {
+        if (auth) {
             localStorage.setItem("islogin", JSON.stringify(users.find(function (l) { return l.email === user.email })))
             redirect('/')
-        } else if (!pas) {
+        } else  {
             return { password: "wrong password"}
         }
         
