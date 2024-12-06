@@ -9,7 +9,7 @@ if (localStorage.getItem("users")) {
 function redirect(path) {
 
     if (window.location.pathname !== path) {
-        window.location.pathname = path;
+        window.location.pathname = `/A4Js/${path}`;
     } else {
         return false;
     }
