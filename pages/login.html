@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Login</title>
+
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="bg-image">
+    <div class="d-flex z-2 justify-content-center align-items-center vh-100">
+        <div class="form-box my-5 text-white p-4  ">
+            <h2 class="text-center fw-bolder">Login</h2>
+            <div class="mt-4">
+                <!-- <label for="email" class="fs-5 pb-1">Email</label> -->
+                <input type="email" id="email" class="w-100 bg-transparent rounded-5 text-white border p-2" placeholder="Email">
+                <span class="text-danger fw-bolder fa-xs" id="emailError"></span>
+            </div>
+            <div class="mt-4">
+                <!-- <label for="password" class="fs-5 pb-1">Password</label> -->
+                <input type="password" id="password" class="w-100 bg-transparent rounded-5 border p-2" placeholder="Password">
+                <span class="text-danger fw-bolder fa-xs" id="pasError"></span>
+            </div>
+
+            <button class="btn btn-light w-100 rounded-2 my-4 rounded-5" id="login">Sing in</button>
+
+            <p class="text-center text-light">Don’t have an account yet? <a href="./singup.html" class="text-white ">Register for free</a></p>
+        </div>
+    </div>
+    <script src="../js/login.js" type="module"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

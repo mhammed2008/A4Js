@@ -1,0 +1,38 @@
+.bg-image{
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.form-box{
+    box-sizing: border-box;
+    width: 95%;
+    
+    border: rgba(221, 221, 221, 0.562) 2px solid;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+/* .btn-light{
+    background-color: #d6d4d4 !important;
+
+} */
+ .border {
+     border: var(--bs-border-width) var(--bs-border-style) #e3e3e349 !important;
+ }
+ input:focus-visible{
+    border: var(--bs-border-width) var(--bs-border-style) #ffffff !important;
+    outline: none;
+ }
+::placeholder {
+    color: rgb(255, 255, 255);
+    opacity: 0.8;
+    /* Firefox */
+}
+
+@media screen and (min-width: 400px) {
+    .form-box{
+        width: 380px;
+    }
+}
